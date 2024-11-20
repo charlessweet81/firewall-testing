@@ -25,7 +25,9 @@ In this tutorial, we will test network security group traffic with a firewall. <
 - Step 1: Log into remote desktop 
 - Step 2: Open Wireshark and start packet capture
 - Step 3: Within Wireshark, filter for ICMP traffic only
-- Step 4: Ping the second terminal from Powershell
+- Step 4: Setup a constant ping from the first device (Windows) to the second device (Linux) via Powershell
+- Step 5: Configure firewall of second device's network security group settings' inbound rules
+
 
 <h2>Actions and Observations</h2>
 
@@ -81,8 +83,5 @@ Add a new rule with the following: Source is 'any', Source Port Ranges is '*', D
 </p>
 
 <p>Another sign the firewall is working is through Wireshark not showing replies to the requests, meaning no two-way communication between devices. </p>
-
-
-
 
 <br />
