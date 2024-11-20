@@ -32,29 +32,33 @@ In this tutorial, we will test network security group traffic with a firewall. <
 
 <h2>Actions and Observations</h2>
 
+
+<p>
+<h3>Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs </h3> 
+</p>
 <p>
 <img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
 </p>
+
 <p>
-Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs  
+<h3> Step 2: Log into the VM with Remote Desktop </h3>
 </p>
-<br />
 
 <p>
 <img src="https://i.imgur.com/dlnWxf3.png" height="80%" width="80%" alt="Filter for ICMP"/>
 </p>
-<p>
-Step 2: Log into the VM with Remote Desktop 
-</p>
+
 <br />
+
+<p>
+<h3>Step 3: Retrieve the private IP address of VM.</h3> 
+
+</p>
 
 <p>
 <img src="https://i.imgur.com/5IRiRtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Step 3: Retrieve the private IP address of VM. 
 
-</p>
 
 <p>
 <img src="https://i.imgur.com/zDWAbPa.png" height="80%" width="80%" alt="Ping the Linux virtual machine using Powershell"/>
