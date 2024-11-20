@@ -68,7 +68,21 @@ Step 4: Ping the second VM from Powershell using 'ping IP -t' to create a nonsto
 Step 5: Go to the second VM (in this case the Linux server) in Azure, and update the network security group settings' inbound rules. <br/> <br/> 
 
 Add a new rule with the following: Source is 'any', Source Port Ranges is '*', Destination is 'any', Service is 'custom' and Destination Port Ranges is '*'. The protocol is 'ICMPv4', the Action is 'Deny' and the Priority is 290 (so that it gets executed before any other rule). Click continue. 
-
 </p>
+
+<p>
+<img src="https://i.imgur.com/nSAIQLH.png" height="80%" width="80%" alt="Powershell showing timed out status"/>
+</p>
+
+<p>Once the changes have made their way through the system, the firewall comes into effect. We can see the firewall is working because Powershell shows a timed out status. </p>
+
+<p>
+<img src="https://i.imgur.com/NBNyWUe.png" height="80%" width="80%" alt="Wireshark showing only requests"/>
+</p>
+
+<p>Another sign the firewall is working is through Wireshark not showing replies to the requests, meaning no two-way communication between devices. </p>
+
+
+
 
 <br />
