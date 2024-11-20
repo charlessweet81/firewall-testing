@@ -54,18 +54,20 @@ Step 3: Retrieve the private IP address of VM.
 </p>
 
 <p>
-<img src="https://i.imgur.com/nVyKkxZ.png" height="80%" width="80%" alt="Ping the Linux virtual machine using Powershell"/>
+<img src="https://i.imgur.com/zDWAbPa.png" height="80%" width="80%" alt="Ping the Linux virtual machine using Powershell"/>
 </p>
 <p>
-Step 4: Ping the second VM from Powershell. Notice that there are 4 reply lines there.  
+Step 4: Ping the second VM from Powershell using 'ping IP -t' to create a nonstop ping. 
 
 </p>
 
 <p>
-<img src="https://i.imgur.com/P3vSmtq.png" height="80%" width="80%" alt="Ping the Linux virtual machine using Powershell"/>
+<img src="https://i.imgur.com/V6M9ruH.png" height="80%" width="80%" alt="Ping the Linux virtual machine using Powershell"/>
 </p>
 <p>
-You can see that the Linux VM is successfully receiving and sending traffic by Wireshark showing 4 request and 4 reply lines, respectively. 
+Step 5: Go to the second VM (in this case the Linux server) in Azure, and update the network security group settings' inbound rules. <br/> <br/> 
+
+Add a new rule with the following: Source is 'any', Source Port Ranges is '*', Destination is 'any', Service is 'custom' and Destination Port Ranges is '*'. The protocol is 'ICMPv4', the Action is 'Deny' and the Priority is 290 (so that it gets executed before any other rule). Click continue. 
 
 </p>
 
