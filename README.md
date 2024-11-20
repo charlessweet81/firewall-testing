@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) Firewall Testing</h1>
+<h1>Configuring a Firewall via Network Security Groups (NSGs)</h1>
 Testing Network Security Groups (NSGs) and firewalls is essential for verifying access controls, identifying vulnerabilities, and ensuring compliance with regulatory standards. This process helps optimize network performance, enhances incident response readiness, and confirms that changes do not inadvertently disrupt legitimate traffic or introduce new security risks. <br/><br/>
 
 In this tutorial, we will test network security group traffic with a firewall. <br />
