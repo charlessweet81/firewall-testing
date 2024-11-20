@@ -22,7 +22,8 @@ In this tutorial, we will test network security group traffic with a firewall. <
 
 <h2>High-Level Steps</h2>
 
-- Step 1: Log into remote desktop 
+- Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs
+- Step 2: Log into the VM with Remote Desktop
 - Step 2: Open Wireshark and start packet capture
 - Step 3: Within Wireshark, filter for ICMP traffic only
 - Step 4: Setup a constant ping from the first device (Windows) to the second device (Linux) via Powershell
@@ -35,7 +36,7 @@ In this tutorial, we will test network security group traffic with a firewall. <
 <img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
 </p>
 <p>
-Step 1: We're going to log into a remote desktop using the virtual machine's public IP address and created username and password. 
+Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs  
 </p>
 <br />
 
@@ -43,7 +44,7 @@ Step 1: We're going to log into a remote desktop using the virtual machine's pub
 <img src="https://i.imgur.com/dlnWxf3.png" height="80%" width="80%" alt="Filter for ICMP"/>
 </p>
 <p>
-Step 2: Open Wireshark and type 'ICMP' into the filter - this lets us test the connectivity between the Windows VM and a second VM (Linux) device without seeing irrelevant traffic. 
+Step 2: Log into the VM with Remote Desktop 
 </p>
 <br />
 
